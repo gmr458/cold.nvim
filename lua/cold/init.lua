@@ -10,7 +10,7 @@ local M = {}
 --- @field custom_light_background? string
 --- @field custom_statusline_dark_background? string
 M.config = {
-    cursorline = false,
+    cursorline = vim.o.cursorline,
     transparent_background = false,
     nvim_tree_darker = false,
     undercurl = true,
@@ -64,7 +64,7 @@ function M.compile( theme, filename_compiled_colorscheme)
             [[
 return string.dump(function()
 vim.o.termguicolors=true
-vim.cmd.highlight "clear"
+if vim.g.colors_name then vim.cmd "hi clear" end
 vim.g.colors_name="cold"
 vim.o.background="%s"
 local h=vim.api.nvim_set_hl]],

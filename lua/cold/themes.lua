@@ -33,7 +33,7 @@ local themes = {
 					line = {
 						bg = palette.base01,
 						nr = {
-							bg = vim.o.cursorline and palette.base01 or main.bg,
+							bg = config.cursorline and palette.base01 or main.bg,
 							fg = main.fg,
 						},
 					},
@@ -80,15 +80,15 @@ local themes = {
 					fg = palette.base02,
 				},
 				float = {
-					bg = palette.baseXX,
+					bg = main.bg,
 					border = {
-						bg = palette.baseXX,
-						fg = palette.baseXX,
+						bg = main.bg,
+						fg = palette.base03,
 					},
 				},
 				pmenu = {
 					bg = palette.baseWW,
-					fg = palette.baseZZ,
+					fg = palette.baseEEL,
 					sel = {
 						bg = palette.base01,
 						fg = palette.base05,
@@ -132,9 +132,6 @@ local themes = {
 					lsp = {
 						active = {
 							fg = palette.base0B,
-						},
-						inactive = {
-							fg = palette.base0A,
 						},
 					},
 					icon = {
@@ -311,8 +308,14 @@ local themes = {
 					fg = palette.base0B,
 				},
 			},
-			cmp_item_kind = {
-				fg = palette.base03,
+			cmp_item = {
+				abbr = {
+					fg = palette.base02,
+				},
+				kind = {
+
+					fg = palette.base03,
+				},
 			},
 			fzf = {
 				normal = {
@@ -347,10 +350,10 @@ local themes = {
 			fg = main.fg,
 			editor = {
 				color_column = {
-					bg = palette.base03,
+					bg = palette.baseEE,
 				},
 				conceal = {
-					fg = palette.base03,
+					fg = palette.base02,
 				},
 				cursor = {
 					bg = main.fg,
@@ -363,9 +366,9 @@ local themes = {
 						bg = palette.base01,
 					},
 					line = {
-						bg = palette.base01,
+						bg = palette.base05,
 						nr = {
-							bg = vim.o.cursorline and palette.base01 or main.bg,
+							bg = config.cursorline and palette.base05 or main.bg,
 							fg = main.fg,
 						},
 					},
@@ -374,20 +377,20 @@ local themes = {
 					bg = palette.base02,
 				},
 				directory = {
-					fg = palette.base0D,
+					fg = palette.base0DL,
 				},
 				diff = {
 					add = {
-						fg = palette.base0B,
+						fg = palette.base0BL,
 					},
 					change = {
-						fg = palette.base0A,
+						fg = palette.base0AL,
 					},
 					delete = {
-						fg = palette.base08,
+						fg = palette.base08L,
 					},
 					text = {
-						fg = palette.base0B,
+						fg = palette.base0BL,
 					},
 				},
 				folded = {
@@ -395,35 +398,35 @@ local themes = {
 				},
 				line_nr = {
 					bg = main.bg,
-					fg = palette.base03,
+					fg = palette.baseEE,
 				},
 				msg = {
 					error = {
-						fg = palette.base08,
+						fg = palette.base08L,
 					},
 					mode = {
 						fg = palette.base0B,
 					},
 					warning = {
-						fg = palette.base0A,
+						fg = palette.base0AL,
 					},
 				},
 				non_text = {
-					fg = palette.base02,
+					fg = palette.base04,
 				},
 				float = {
-					bg = palette.baseXX,
+					bg = main.bg,
 					border = {
-						bg = palette.baseXX,
-						fg = palette.baseXX,
+						bg = main.bg,
+						fg = palette.base03,
 					},
 				},
 				pmenu = {
-					bg = palette.baseWW,
+					bg = palette.base04,
 					fg = palette.baseZZ,
 					sel = {
-						bg = palette.base01,
-						fg = palette.base05,
+						bg = palette.baseRR,
+						fg = palette.base00,
 					},
 					sbar = {
 						bg = palette.baseWW,
@@ -451,11 +454,11 @@ local themes = {
 					},
 				},
 				status_line = {
-					bg = palette.baseXX,
-					fg = palette.base04,
+					bg = palette.baseRR,
+					fg = palette.base02,
 					medium = {
-						bg = palette.base00,
-						fg = palette.baseZZ,
+						bg = palette.base04,
+						fg = palette.base02,
 					},
 					mode = {
 						bg = palette.base0B,
@@ -463,18 +466,15 @@ local themes = {
 					},
 					lsp = {
 						active = {
-							fg = palette.base0B,
-						},
-						inactive = {
-							fg = palette.base0A,
+							fg = palette.base0BL,
 						},
 					},
 					icon = {
 						git = {
-							fg = palette.base09,
+							fg = palette.base09L,
 						},
 						unsaved = {
-							fg = palette.base0A,
+							fg = palette.base0AL,
 						},
 					},
 				},
@@ -482,7 +482,7 @@ local themes = {
 					fg = palette.base05,
 				},
 				visual = {
-					bg = palette.base02,
+					bg = palette.baseRR,
 				},
 				win = {
 					bar = {
@@ -499,7 +499,7 @@ local themes = {
 			},
 			syntax = {
 				comment = {
-					fg = palette.base03,
+					fg = palette.baseTY,
 				},
 				constant = {
 					fg = palette.baseRR,
@@ -511,7 +511,7 @@ local themes = {
 					fg = palette.baseSS,
 				},
 				number = {
-					fg = palette.base05,
+					fg = palette.baseWW,
 				},
 				boolean = {
 					fg = palette.base0D,
@@ -566,40 +566,40 @@ local themes = {
 					},
 				},
 				context = {
-					bg = palette.base01,
+					bg = palette.baseRR,
 					line_number = {
-						bg = palette.base01,
+						bg = palette.baseRR,
 					},
 				},
 			},
 			lsp = {
 				reference = {
 					text = {
-						bg = palette.base02,
+						bg = palette.baseRR,
 					},
 					read = {
-						bg = palette.base02,
+						bg = palette.baseRR,
 					},
 					write = {
-						bg = palette.base02,
+						bg = palette.baseRR,
 					},
 				},
 			},
 			diagnostic = {
 				error = {
-					fg = palette.base08,
+					fg = palette.base08L,
 				},
 				warn = {
-					fg = palette.base0A,
+					fg = palette.base0AL,
 				},
 				info = {
-					fg = palette.base0D,
+					fg = palette.base0DL,
 				},
 				hint = {
-					fg = palette.base0C,
+					fg = palette.base0CL,
 				},
 				ok = {
-					fg = palette.base0B,
+					fg = palette.base0BL,
 				},
 				unnecessary = {
 					fg = palette.base03,
@@ -610,8 +610,8 @@ local themes = {
 			},
 			nvim_tree = {
 				normal = {
-					bg = palette.base00,
-					fg = palette.base04,
+					bg = palette.base05,
+					fg = palette.baseWW,
 				},
 				win_separator = {
 					bg = main.bg,
@@ -619,7 +619,7 @@ local themes = {
 				},
 				folder = {
 					icon = {
-						fg = palette.base0A,
+						fg = palette.base0AL,
 					},
 				},
 				root_folder = {
@@ -627,32 +627,37 @@ local themes = {
 				},
 				git = {
 					deleted = {
-						fg = palette.base08,
+						fg = palette.base08L,
 					},
 					dirty = {
-						fg = palette.base0A,
+						fg = palette.base0AL,
 					},
 					ignored = {
 						fg = palette.base03,
 					},
 					staged = {
-						fg = palette.base0B,
+						fg = palette.base0BL,
 					},
 				},
 				exec_file = {
-					fg = palette.base0B,
+					fg = palette.base0BL,
 				},
 			},
-			cmp_item_kind = {
-				fg = palette.base03,
+			cmp_item = {
+				abbr = {
+					fg = palette.baseTT,
+				},
+				kind = {
+					fg = palette.base03,
+				},
 			},
 			fzf = {
 				normal = {
-					bg = palette.baseWW,
+					bg = palette.baseRR,
 				},
 				border = {
-					bg = palette.baseWW,
-					fg = palette.baseWW,
+					bg = palette.baseRR,
+					fg = palette.baseRR,
 				},
 				preview = {
 					normal = {

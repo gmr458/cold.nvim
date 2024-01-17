@@ -205,8 +205,9 @@ function M.get(theme)
 		["NvimTreeExecFile"] = { fg = theme.nvim_tree.exec_file.fg },
 
 		-- github.com/hrsh7th/nvim-cmp
+		["CmpItemAbbrDefault"] = { fg = theme.cmp_item.abbr.fg },
 		["CmpItemAbbrMatch"] = { link = "Identifier" },
-		["CmpItemKind"] = { fg = theme.cmp_item_kind.fg },
+		["CmpItemKind"] = { fg = theme.cmp_item.kind.fg },
 		["CmpItemKindClass"] = { link = "Type" },
 		["CmpItemKindConstant"] = { link = "Constant" },
 		["CmpItemKindConstructor"] = { link = "Function" },
@@ -244,7 +245,7 @@ function M.get(theme)
 		},
 		["StatusLineLspInactive"] = {
 			bg = theme.editor.status_line.bg,
-			fg = theme.editor.status_line.lsp.inactive.fg,
+			fg = theme.diagnostic.error.fg,
 		},
 
 		["StatusLineGitDiffAdded"] = { bg = theme.editor.status_line.medium.bg, fg = theme.editor.diff.add.fg },
