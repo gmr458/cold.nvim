@@ -49,16 +49,14 @@ function M.load()
 
     local path_compiled =
         string.format('%s%s%s', path_compiled_files, path_sep, vim.o.background)
-    local f = assert(
-        loadfile(path_compiled),
-        '[cold.nvim] could not load cache'
-    )
+    local f =
+        assert(loadfile(path_compiled), '[cold.nvim] could not load cache')
     f()
 end
 
 --- @param theme ThemeDark | ThemeLight
 --- @param filename_compiled_colorscheme string
-function M.compile( theme, filename_compiled_colorscheme)
+function M.compile(theme, filename_compiled_colorscheme)
     local lines = {
         string.format(
             [[
@@ -98,10 +96,7 @@ local h=vim.api.nvim_set_hl]],
         local err_path = (path_sep == '/' and '/tmp' or os.getenv 'TMP')
             .. '/cold.lua'
         print(
-            string.format(
-                '[cold.nvim] error, open %s for debugging',
-                err_path
-            )
+            string.format('[cold.nvim] error, open %s for debugging', err_path)
         )
         local err = io.open(err_path, 'wb')
         if err then
@@ -156,4 +151,3 @@ function M.term_supports_undercurl()
 end
 
 return M
-
