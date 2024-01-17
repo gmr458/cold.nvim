@@ -11,8 +11,8 @@ function M.get(theme)
             bg = theme.editor.cursor.bg,
             fg = theme.editor.cursor.fg,
         },
-        -- set_hl('lCursor', { bg = '', fg = '' })
-        -- set_hl('CursorIM', { bg = '', fg = '' })
+        -- ['lCursor'] = {},
+        -- ['CursorIM'] = {},
         ['CursorColumn'] = { bg = theme.editor.cursor.column.bg },
         ['CursorLine'] = { bg = theme.editor.cursor.line.bg },
         ['Directory'] = { fg = theme.editor.directory.fg },
@@ -20,36 +20,36 @@ function M.get(theme)
         ['DiffChange'] = { fg = theme.editor.diff.change.fg },
         ['DiffDelete'] = { fg = theme.editor.diff.delete.fg },
         ['DiffText'] = { fg = theme.editor.diff.text.fg },
-        -- set_hl('EndOfBuffer', { bg = '', fg = '' })
-        -- set_hl('TermCursor', { bg = '', fg = '' })
-        -- set_hl('TermCursorNC', { bg = '', fg = '' })
+        -- ['EndOfBuffer'] = {},
+        -- ['TermCursor'] = {},
+        -- ['TermCursorNC'] = {},
         ['ErrorMsg'] = { fg = theme.editor.msg.error.fg },
         ['WinSeparator'] = {
             bg = theme.editor.win.separator.bg,
             fg = theme.editor.win.separator.fg,
         },
         ['Folded'] = { bg = theme.editor.folded.bg },
-        -- set_hl('FoldColumn', { bg = '', fg = '' })
-        -- set_hl('SignColumn', { bg = '', fg = '' })
-        -- set_hl('IncSearch', { bg = '', fg = '' })
-        -- set_hl('Substitute', { bg = '', fg = '' })
+        -- ['FoldColumn'] = {},
+        -- ['SignColumn'] = {},
+        -- ['IncSearch'] = {},
+        -- ['Substitute'] = {},
         ['LineNr'] = {
             bg = theme.editor.line_nr.bg,
             fg = theme.editor.line_nr.fg,
         },
-        -- set_hl('LineNrAbove', { bg = '', fg = '' })
-        -- set_hl('LineNrBelow', { bg = '', fg = '' })
+        -- ['LineNrAbove'] = {},
+        -- ['LineNrBelow'] = {},
         ['CursorLineNr'] = {
             bg = theme.editor.cursor.line.nr.bg,
             fg = theme.editor.cursor.line.nr.fg,
         },
-        -- set_hl('CursorLineFol', { bg = '', fg = '' })
-        -- set_hl('CursorLineSig', { bg = '', fg = '' })
+        -- ['CursorLineFol'] = {},
+        -- ['CursorLineSig'] = {},
         ['MatchParen'] = { bg = theme.editor.match_paren.bg, underline = true },
         ['ModeMsg'] = { fg = theme.editor.msg.mode.fg },
-        -- set_hl('MsgArea', { bg = '', fg = '' })
-        -- set_hl('MsgSeparator', { bg = '', fg = '' })
-        -- set_hl('MoreMsg', { fg = '' })
+        -- ['MsgArea'] = {},
+        -- ['MsgSeparator'] = {},
+        -- ['MoreMsg'] = {},
         ['NonText'] = { fg = theme.editor.non_text.fg },
         ['Normal'] = { bg = theme.bg, fg = theme.fg },
         ['NormalFloat'] = { bg = theme.editor.float.bg },
@@ -57,27 +57,27 @@ function M.get(theme)
             bg = theme.editor.float.border.bg,
             fg = theme.editor.float.border.fg,
         },
-        -- set_hl('FloatTitle', { bg = '', fg = '' })
-        -- set_hl('FloatFooter', { bg = '', fg = '' })
-        -- set_hl('NormalNC', { bg = '', fg = '' })
+        -- ['FloatTitle'] = {},
+        -- ['FloatFooter'] = {},
+        -- ['NormalNC'] = {},
         ['Pmenu'] = { bg = theme.editor.pmenu.bg, fg = theme.editor.pmenu.fg },
         ['PmenuSel'] = {
             bg = theme.editor.pmenu.sel.bg,
             fg = theme.editor.pmenu.sel.fg,
         },
-        -- set_hl('PmenuKind', { bg = '', fg = '' })
-        -- set_hl('PmenuKindSel', { bg = '', fg = '' })
-        -- set_hl('PmenuExtra', { bg = '', fg = '' })
-        -- set_hl('PmenuExtraSel', { bg = '', fg = '' })
+        -- ['PmenuKind'] = {},
+        -- ['PmenuKindSel'] = {},
+        -- ['PmenuExtra'] = {},
+        -- ['PmenuExtraSel'] = {},
         ['PmenuSbar'] = { bg = theme.editor.pmenu.sbar.bg },
         ['PmenuThumb'] = { bg = theme.editor.pmenu.thumb.bg },
-        -- set_hl('Question', { bg = '', fg = '' })
-        -- set_hl('QuickFixLine', { bg = '', fg = '' })
+        -- ['Question'] = {},
+        -- ['QuickFixLine'] = {},
         ['Search'] = {
             bg = theme.editor.search.bg,
             fg = theme.editor.search.fg,
         },
-        -- set_hl('SpecialKey', { bg = '', fg = '' })
+        -- ['SpecialKey'] = {},
         ['SpellBad'] = { fg = theme.editor.spell.bad.fg, undercurl = true },
         ['SpellCap'] = { fg = theme.editor.spell.cap.fg, undercurl = true },
         ['SpellLocal'] = { fg = theme.editor.spell.local_.fg, undercurl = true },
@@ -90,21 +90,19 @@ function M.get(theme)
             bg = theme.editor.status_line.bg,
             fg = theme.editor.status_line.fg,
         },
-        -- set_hl('TabLine', { bg = '', fg = '' })
-        -- set_hl('TabLineFill', { bg = '', fg = '' })
-        -- set_hl('TabLineSel', { bg = '', fg = '' })
+        -- ['TabLine'] = {},
+        -- ['TabLineFill'] = {},
+        -- ['TabLineSel'] = {},
         ['Title'] = { fg = theme.editor.title.fg },
         ['Visual'] = { bg = theme.editor.visual.bg },
-        -- set_hl('VisualNOS', { bg = '', fg = '' })
+        -- ['VisualNOS'] = {},
         ['WarningMsg'] = { fg = theme.editor.msg.warning.fg },
-        -- set_hl('Whitespace', { bg = '', fg = '' })
-        -- set_hl('WildMenu', { bg = '', fg = '' })
+        -- ['Whitespace'] = {},
+        -- ['WildMenu'] = {},
         ['WinBar'] = { link = 'Comment' },
         ['WinBarNC'] = { link = 'Comment' },
 
         -- Syntax
-        -- local comment = colors.base03
-
         ['Comment'] = { fg = theme.syntax.comment.fg },
 
         ['Constant'] = { fg = theme.syntax.identifier.fg },
@@ -137,20 +135,20 @@ function M.get(theme)
         ['Typedef'] = { fg = theme.syntax.type.fg },
 
         ['Special'] = { fg = theme.syntax.special.fg },
-        -- set_hl('SpecialChar', { fg = '' })
-        -- set_hl('Tag', { fg = '' })
+        -- ['SpecialChar'] = {},
+        -- ['Tag'] = {},
         ['Delimiter'] = { fg = theme.syntax.delimiter.fg },
-        -- set_hl('SpecialComment', { fg = '' })
-        -- set_hl('Debug', { fg = '' })
+        -- ['SpecialComment'] = {},
+        -- ['Debug'] = {},
 
         ['Underlined'] = { underline = true },
-        --
-        -- set_hl('Ignore', { fg = '' })
-        --
+
+        -- ['Ignore'] = {},
+
         ['Error'] = { bg = theme.syntax.error.bg },
-        --
+
         ['Todo'] = { bg = theme.syntax.todo.bg },
-        --
+
         ['Added'] = { fg = theme.syntax.added.fg, bg = theme.syntax.added.bg },
         ['Changed'] = {
             fg = theme.syntax.changed.fg,
@@ -185,7 +183,7 @@ function M.get(theme)
         },
         ['LspCodeLens'] = { link = 'Comment' },
         ['LspCodeLensSeparator'] = { link = 'Comment' },
-        -- set_hl('LspSignatureActiveParameter', {})
+        -- ['LspSignatureActiveParameter'] = {},
         ['LspInlayHint'] = { link = 'Comment' },
 
         -- LSP Semantic tokens
@@ -322,7 +320,6 @@ function M.get(theme)
         ['CmpItemKindVariable'] = { link = 'Identifier' },
 
         -- gmr.core.statusline
-
         ['StatusLineMode'] = {
             bg = theme.editor.status_line.mode.bg,
             fg = theme.editor.status_line.mode.fg,
