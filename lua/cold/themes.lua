@@ -376,7 +376,7 @@ local themes = {
                     },
                 },
                 match_paren = {
-                    bg = palette.base02,
+                    bg = palette.baseRR,
                 },
                 directory = {
                     fg = palette.base0DL,
