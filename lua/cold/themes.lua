@@ -332,6 +332,11 @@ local themes = {
                     },
                 },
             },
+            alpha = {
+                header = {
+                    fg = palette.base0B,
+                },
+            },
         }
 
         return theme
@@ -665,6 +670,11 @@ local themes = {
                     normal = {
                         bg = main.bg,
                     },
+                },
+            },
+            alpha = {
+                header = {
+                    fg = palette.base0B,
                 },
             },
         }

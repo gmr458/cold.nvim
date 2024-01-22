@@ -401,6 +401,9 @@ function M.get(theme)
             fg = theme.fzf.border.fg,
         },
         ['FzfLuaPreviewNormal'] = { bg = theme.bg },
+
+        -- github.com/goolord/alpha-nvim - custom hlgroup for header
+        ['AlphaHeader'] = { fg = theme.alpha.header.fg },
     }
 end
 
