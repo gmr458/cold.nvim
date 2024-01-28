@@ -225,6 +225,17 @@ local themes = {
                     bg = palette.base08,
                 },
             },
+            git = {
+                added = {
+                    fg = palette.base0B,
+                },
+                changed = {
+                    fg = palette.base09,
+                },
+                removed = {
+                    fg = palette.base08,
+                },
+            },
             treesitter = {
                 tag = {
                     delimiter = {
@@ -564,6 +575,17 @@ local themes = {
                 removed = {
                     fg = palette.base05,
                     bg = palette.base08,
+                },
+            },
+            git = {
+                added = {
+                    fg = palette.base0B,
+                },
+                changed = {
+                    fg = palette.base09,
+                },
+                removed = {
+                    fg = palette.base08,
                 },
             },
             treesitter = {

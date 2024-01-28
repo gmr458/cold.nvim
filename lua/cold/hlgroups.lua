@@ -404,6 +404,11 @@ function M.get(theme)
 
         -- github.com/goolord/alpha-nvim - custom hlgroup for header
         ['AlphaHeader'] = { fg = theme.alpha.header.fg },
+
+        -- github.com/lewis6991/gitsigns.nvim
+        ['GitSignsAdd'] = { fg = theme.git.added.fg },
+        ['GitSignsChange'] = { fg = theme.git.changed.fg },
+        ['GitSignsDelete'] = { fg = theme.git.removed.fg },
     }
 end
 
