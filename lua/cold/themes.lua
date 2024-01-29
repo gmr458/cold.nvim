@@ -9,6 +9,13 @@ local themes = {
             fg = palette.baseRR,
         }
 
+        if
+            config.custom_dark_background ~= nil
+            and type(config.custom_dark_background) == 'string'
+        then
+            main.bg = config.custom_dark_background
+        end
+
         --- @class ThemeDark
         local theme = {
             bg = main.bg,
@@ -360,6 +367,13 @@ local themes = {
             bg = palette.base06,
             fg = palette.baseXX,
         }
+
+        if
+            config.custom_light_background ~= nil
+            and type(config.custom_light_background) == 'string'
+        then
+            main.bg = config.custom_light_background
+        end
 
         --- @class ThemeLight
         local theme = {
