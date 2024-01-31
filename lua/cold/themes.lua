@@ -54,16 +54,16 @@ local themes = {
                 },
                 diff = {
                     add = {
-                        fg = palette.base0B,
+                        bg = palette.greenDiffDark,
                     },
                     change = {
-                        fg = palette.base0A,
+                        bg = palette.base0Adarker,
                     },
                     delete = {
-                        fg = palette.base08,
+                        bg = palette.redDiffDark,
                     },
                     text = {
-                        fg = palette.base0B,
+                        bg = palette.greenDiffDark,
                     },
                 },
                 folded = {
@@ -202,7 +202,7 @@ local themes = {
                     fg = palette.base04,
                 },
                 type = {
-                    fg = palette.baseEE,
+                    fg = palette.baseTT,
                 },
                 special = {
                     fg = palette.baseSS,
@@ -235,12 +235,21 @@ local themes = {
             git = {
                 added = {
                     fg = palette.base0B,
+                    inline = {
+                        bg = palette.greenDiffInlineDark,
+                    },
                 },
                 changed = {
-                    fg = palette.base09,
+                    fg = palette.base0A,
+                    inline = {
+                        bg = palette.greenDiffInlineDark,
+                    },
                 },
                 removed = {
                     fg = palette.base08,
+                    inline = {
+                        bg = palette.redDiffInlineDark,
+                    },
                 },
             },
             treesitter = {
@@ -413,16 +422,16 @@ local themes = {
                 },
                 diff = {
                     add = {
-                        fg = palette.base0BL,
+                        bg = palette.greenDiffLight,
                     },
                     change = {
-                        fg = palette.base0AL,
+                        bg = palette.base0A,
                     },
                     delete = {
-                        fg = palette.base08L,
+                        bg = palette.redDiffLight,
                     },
                     text = {
-                        fg = palette.base0BL,
+                        bg = palette.greenDiffLight,
                     },
                 },
                 folded = {
@@ -511,7 +520,7 @@ local themes = {
                     },
                 },
                 title = {
-                    fg = palette.base05,
+                    fg = palette.baseXX,
                 },
                 visual = {
                     bg = palette.baseRR,
@@ -594,12 +603,21 @@ local themes = {
             git = {
                 added = {
                     fg = palette.base0B,
+                    inline = {
+                        bg = palette.greenDiffInlineLight,
+                    },
                 },
                 changed = {
-                    fg = palette.base09,
+                    fg = palette.base0A,
+                    inline = {
+                        bg = palette.greenDiffInlineLight,
+                    },
                 },
                 removed = {
                     fg = palette.base08,
+                    inline = {
+                        bg = palette.redDiffInlineLight,
+                    },
                 },
             },
             treesitter = {

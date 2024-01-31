@@ -16,10 +16,10 @@ function M.get(theme)
         ['CursorColumn'] = { bg = theme.editor.cursor.column.bg },
         ['CursorLine'] = { bg = theme.editor.cursor.line.bg },
         ['Directory'] = { fg = theme.editor.directory.fg },
-        ['DiffAdd'] = { fg = theme.editor.diff.add.fg },
-        ['DiffChange'] = { fg = theme.editor.diff.change.fg },
-        ['DiffDelete'] = { fg = theme.editor.diff.delete.fg },
-        ['DiffText'] = { fg = theme.editor.diff.text.fg },
+        ['DiffAdd'] = { bg = theme.editor.diff.add.bg },
+        ['DiffChange'] = { bg = theme.editor.diff.change.bg },
+        ['DiffDelete'] = { bg = theme.editor.diff.delete.bg },
+        ['DiffText'] = { bg = theme.editor.diff.text.bg },
         -- ['EndOfBuffer'] = {},
         -- ['TermCursor'] = {},
         -- ['TermCursorNC'] = {},
@@ -169,6 +169,9 @@ function M.get(theme)
         ['@tag.attribute'] = { link = 'Identifier' },
         ['@tag.delimiter'] = { fg = theme.treesitter.tag.delimiter.fg },
         ['@constructor'] = { link = 'Type' },
+        ['@diff.plus'] = { link = 'DiffAdd' },
+        ['@diff.minus'] = { link = 'DiffDelete' },
+        ['@diff.delta'] = { link = 'DiffChange' },
 
         -- Treesitter Context
         ['TreesitterContext'] = { bg = theme.treesitter.context.bg },
@@ -367,15 +370,15 @@ function M.get(theme)
 
         ['StatusLineGitDiffAdded'] = {
             bg = theme.editor.status_line.medium.bg,
-            fg = theme.editor.diff.add.fg,
+            fg = theme.git.added.fg,
         },
         ['StatusLineGitDiffChanged'] = {
             bg = theme.editor.status_line.medium.bg,
-            fg = theme.editor.diff.change.fg,
+            fg = theme.git.changed.fg,
         },
         ['StatusLineGitDiffRemoved'] = {
             bg = theme.editor.status_line.medium.bg,
-            fg = theme.editor.diff.delete.fg,
+            fg = theme.git.removed.fg,
         },
 
         ['StatusLineGitBranchIcon'] = {
@@ -407,8 +410,11 @@ function M.get(theme)
 
         -- github.com/lewis6991/gitsigns.nvim
         ['GitSignsAdd'] = { fg = theme.git.added.fg },
+        ['GitSignsAddInline'] = { bg = theme.git.added.inline.bg },
         ['GitSignsChange'] = { fg = theme.git.changed.fg },
+        ['GitSignsChangeInline'] = { bg = theme.git.changed.inline.bg, fg = theme.git.changed.inline.fg },
         ['GitSignsDelete'] = { fg = theme.git.removed.fg },
+        ['GitSignsDeleteInline'] = { bg = theme.git.removed.inline.bg },
     }
 end
 
