@@ -1,5 +1,6 @@
 --- @class Palette
 local palette = {
+    basecnjd = '#0e0e0e',
     baseXX = '#111111',
     baseYY = '#141414',
     base00 = '#161616',
@@ -56,6 +57,7 @@ local palette = {
     base0CL = '#86c1b9',
     base0EL = '#ba8baf',
     base0FL = '#a16946',
+    white = '#ffffff',
 }
 
 return palette

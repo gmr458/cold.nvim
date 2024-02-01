@@ -5,7 +5,7 @@ local themes = {
     --- @return ThemeDark
     dark = function(palette, config)
         local main = {
-            bg = palette.baseYY,
+            bg = palette.basecnjd,
             fg = palette.baseRR,
         }
 
@@ -373,7 +373,7 @@ local themes = {
     --- @return ThemeLight
     light = function(palette, config)
         local main = {
-            bg = palette.base06,
+            bg = palette.white,
             fg = palette.baseXX,
         }
 
