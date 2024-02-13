@@ -160,6 +160,7 @@ function M.get(theme)
         },
 
         -- Treesitter
+        ['@attribute'] = { link = 'Identifier' },
         ['@constant.builtin'] = { link = 'Keyword' },
         ['@constructor'] = { link = 'Type' },
         ['@constructor.lua'] = { link = 'Delimiter' },
@@ -198,6 +199,8 @@ function M.get(theme)
 
         ['@lsp.type.namespace'] = { link = 'Identifier' },
         ['@lsp.type.macro'] = { link = 'Macro' },
+
+        ['@lsp.typemod.enumMember.defaultLibrary'] = { link = 'Keyword' },
 
         -- Diagnostics
         ['DiagnosticError'] = { fg = theme.diagnostic.error.fg },
