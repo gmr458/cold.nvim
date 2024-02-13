@@ -170,6 +170,8 @@ function M.get(theme)
         ['@storageclass.rust'] = { link = 'Keyword' },
         ['@tag.attribute'] = { link = 'Identifier' },
         ['@tag.delimiter'] = { fg = theme.treesitter.tag.delimiter.fg },
+        ['@tag.javascript'] = { link = 'Type' },
+        ['@tag.tsx'] = { link = 'Type' },
         ['@type.qualifier'] = { link = 'Keyword' },
         ['@variable'] = { link = 'Identifier' },
 
