@@ -412,7 +412,10 @@ function M.get(theme)
         ['GitSignsAdd'] = { fg = theme.git.added.fg },
         ['GitSignsAddInline'] = { bg = theme.git.added.inline.bg },
         ['GitSignsChange'] = { fg = theme.git.changed.fg },
-        ['GitSignsChangeInline'] = { bg = theme.git.changed.inline.bg, fg = theme.git.changed.inline.fg },
+        ['GitSignsChangeInline'] = {
+            bg = theme.git.changed.inline.bg,
+            fg = theme.git.changed.inline.fg,
+        },
         ['GitSignsDelete'] = { fg = theme.git.removed.fg },
         ['GitSignsDeleteInline'] = { bg = theme.git.removed.inline.bg },
     }
