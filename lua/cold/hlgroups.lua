@@ -167,6 +167,7 @@ function M.get(theme)
         ['@diff.minus'] = { link = 'DiffDelete' },
         ['@diff.plus'] = { link = 'DiffAdd' },
         ['@function.builtin'] = { link = 'Function' },
+        ['@module'] = { link = 'Identifier' },
         ['@storageclass.rust'] = { link = 'Keyword' },
         ['@tag.attribute'] = { link = 'Identifier' },
         ['@tag.delimiter'] = { fg = theme.treesitter.tag.delimiter.fg },
