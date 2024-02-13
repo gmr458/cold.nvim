@@ -197,6 +197,7 @@ function M.get(theme)
         ['@lsp.mod.async'] = { link = 'Function' },
 
         ['@lsp.type.namespace'] = { link = 'Identifier' },
+        ['@lsp.type.macro'] = { link = 'Macro' },
 
         -- Diagnostics
         ['DiagnosticError'] = { fg = theme.diagnostic.error.fg },
