@@ -198,8 +198,8 @@ function M.get(theme)
         ['@lsp.mod.async'] = { link = 'Function' },
 
         ['@lsp.type.keyword'] = { link = 'Keyword' },
-        ['@lsp.type.namespace'] = { link = 'Identifier' },
         ['@lsp.type.macro'] = { link = 'Macro' },
+        ['@lsp.type.namespace'] = { link = 'Identifier' },
 
         ['@lsp.typemod.enumMember.defaultLibrary'] = { link = 'Keyword' },
 
