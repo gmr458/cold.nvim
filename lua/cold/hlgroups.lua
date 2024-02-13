@@ -192,6 +192,7 @@ function M.get(theme)
         ['LspInlayHint'] = { link = 'Comment' },
 
         -- LSP Semantic tokens
+        ['@lsp.mod.async'] = { link = 'Function' },
 
         -- Diagnostics
         ['DiagnosticError'] = { fg = theme.diagnostic.error.fg },
