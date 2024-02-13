@@ -164,7 +164,7 @@ function M.get(theme)
         ['@constructor.lua'] = { link = 'Delimiter' },
         ['@function.builtin'] = { link = 'Function' },
         ['@variable'] = { link = 'Identifier' },
-        ['@type.qualifier.rust'] = { link = 'Keyword' },
+        ['@type.qualifier'] = { link = 'Keyword' },
         ['@storageclass.rust'] = { link = 'Keyword' },
         ['@tag.attribute'] = { link = 'Identifier' },
         ['@tag.delimiter'] = { fg = theme.treesitter.tag.delimiter.fg },
