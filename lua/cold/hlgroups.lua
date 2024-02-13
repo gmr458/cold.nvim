@@ -161,17 +161,17 @@ function M.get(theme)
 
         -- Treesitter
         ['@constant.builtin'] = { link = 'Keyword' },
+        ['@constructor'] = { link = 'Type' },
         ['@constructor.lua'] = { link = 'Delimiter' },
+        ['@diff.delta'] = { link = 'DiffChange' },
+        ['@diff.minus'] = { link = 'DiffDelete' },
+        ['@diff.plus'] = { link = 'DiffAdd' },
         ['@function.builtin'] = { link = 'Function' },
-        ['@variable'] = { link = 'Identifier' },
-        ['@type.qualifier'] = { link = 'Keyword' },
         ['@storageclass.rust'] = { link = 'Keyword' },
         ['@tag.attribute'] = { link = 'Identifier' },
         ['@tag.delimiter'] = { fg = theme.treesitter.tag.delimiter.fg },
-        ['@constructor'] = { link = 'Type' },
-        ['@diff.plus'] = { link = 'DiffAdd' },
-        ['@diff.minus'] = { link = 'DiffDelete' },
-        ['@diff.delta'] = { link = 'DiffChange' },
+        ['@type.qualifier'] = { link = 'Keyword' },
+        ['@variable'] = { link = 'Identifier' },
 
         -- Treesitter Context
         ['TreesitterContext'] = { bg = theme.treesitter.context.bg },
