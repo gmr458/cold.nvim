@@ -195,6 +195,8 @@ function M.get(theme)
         -- LSP Semantic tokens
         ['@lsp.mod.async'] = { link = 'Function' },
 
+        ['@lsp.type.namespace'] = { link = 'Identifier' },
+
         -- Diagnostics
         ['DiagnosticError'] = { fg = theme.diagnostic.error.fg },
         ['DiagnosticWarn'] = { fg = theme.diagnostic.warn.fg },
