@@ -361,12 +361,6 @@ function M.get(theme)
             fg = theme.editor.status_line.icon.unsaved.fg,
         },
 
-        -- gmr.core.winbar
-        ['WinBarUnsavedSymbol'] = {
-            bg = theme.bg,
-            fg = theme.editor.status_line.icon.unsaved.fg,
-        },
-
         -- github.com/ibhagwan/fzf-lua
         ['FzfLuaNormal'] = { bg = theme.fzf.normal.bg },
         ['FzfLuaBorder'] = {
