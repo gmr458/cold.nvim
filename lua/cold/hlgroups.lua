@@ -270,6 +270,7 @@ function M.get(theme)
         ['NvimTreeGitNew'] = { link = 'WarningMsg' },
         ['NvimTreeGitStaged'] = { fg = theme.nvim_tree.git.staged.fg },
         ['NvimTreeExecFile'] = { fg = theme.nvim_tree.exec_file.fg },
+        ['NvimTreeIndentMarker'] = { link = 'Comment' },
 
         -- github.com/hrsh7th/nvim-cmp
         ['CmpItemAbbrDefault'] = { fg = theme.cmp_item.abbr.fg },
