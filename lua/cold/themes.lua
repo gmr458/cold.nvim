@@ -38,9 +38,9 @@ local themes = {
                         bg = palette.dark_05,
                     },
                     line = {
-                        bg = palette.dark_05,
+                        bg = palette.dark_03,
                         nr = {
-                            bg = config.cursorline and palette.dark_05
+                            bg = config.cursorline and palette.dark_03
                                 or main.bg,
                             fg = main.fg,
                         },
@@ -373,7 +373,7 @@ local themes = {
     --- @return ThemeLight
     light = function(palette, config)
         local main = {
-            bg = palette.light_03,
+            bg = palette.light_04,
             fg = palette.dark_02,
         }
 
@@ -406,9 +406,9 @@ local themes = {
                         bg = palette.dark_05,
                     },
                     line = {
-                        bg = palette.light_02,
+                        bg = palette.light_03,
                         nr = {
-                            bg = config.cursorline and palette.light_02
+                            bg = config.cursorline and palette.light_03
                                 or main.bg,
                             fg = main.fg,
                         },
