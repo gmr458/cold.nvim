@@ -177,6 +177,7 @@ function M.get(theme)
         ['@tag.tsx'] = { link = 'Type' },
         ['@type.qualifier'] = { link = 'Keyword' },
         ['@variable'] = { link = 'Identifier' },
+        ['@variable.builtin'] = { link = 'Identifier' },
 
         -- Treesitter Context
         ['TreesitterContext'] = { bg = theme.treesitter.context.bg },
