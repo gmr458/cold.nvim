@@ -201,6 +201,7 @@ function M.get(theme)
         ['@lsp.type.keyword'] = { link = 'Keyword' },
         ['@lsp.type.macro'] = { link = 'Macro' },
         ['@lsp.type.namespace'] = { link = 'Identifier' },
+        ['@lsp.type.variable'] = { link = '@lsp' },
 
         ['@lsp.typemod.enumMember.defaultLibrary'] = { link = 'Keyword' },
 
