@@ -73,10 +73,7 @@ function M.get(theme)
         ['PmenuThumb'] = { bg = theme.editor.pmenu.thumb.bg },
         -- ['Question'] = {},
         -- ['QuickFixLine'] = {},
-        ['Search'] = {
-            bg = theme.editor.search.bg,
-            fg = theme.editor.search.fg,
-        },
+        ['Search'] = { bg = theme.editor.search.bg },
         -- ['SpecialKey'] = {},
         ['SpellBad'] = { fg = theme.editor.spell.bad.fg, undercurl = true },
         ['SpellCap'] = { fg = theme.editor.spell.cap.fg, undercurl = true },
