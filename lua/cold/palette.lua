@@ -49,6 +49,8 @@ local palette = {
     purple_03 = '#a8aec1',
 
     pink_01 = '#C493B0',
+
+    none = 'NONE',
 }
 
 return palette

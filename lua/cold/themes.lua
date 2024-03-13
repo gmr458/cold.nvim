@@ -16,6 +16,10 @@ local themes = {
             main.bg = config.custom_dark_background
         end
 
+        if config.transparent_background then
+            main.bg = palette.none
+        end
+
         --- @class ThemeDark
         local theme = {
             bg = main.bg,
@@ -301,7 +305,8 @@ local themes = {
             },
             nvim_tree = {
                 normal = {
-                    bg = palette.dark_03,
+                    bg = config.transparent_background and palette.none
+                        or palette.dark_03,
                     fg = palette.grey_07,
                 },
                 win_separator = {
@@ -380,6 +385,10 @@ local themes = {
             and type(config.custom_light_background) == 'string'
         then
             main.bg = config.custom_light_background
+        end
+
+        if config.transparent_background then
+            main.bg = 'NONE'
         end
 
         --- @class ThemeLight
@@ -667,7 +676,8 @@ local themes = {
             },
             nvim_tree = {
                 normal = {
-                    bg = palette.light_02,
+                    bg = config.transparent_background and palette.none
+                        or palette.light_02,
                     fg = palette.dark_04,
                 },
                 win_separator = {
