@@ -81,7 +81,7 @@ local themes = {
                         fg = palette.red_03,
                     },
                     mode = {
-                        fg = palette.green_04,
+                        fg = palette.green_05,
                     },
                     warning = {
                         fg = palette.yellow_03,
@@ -122,7 +122,7 @@ local themes = {
                         fg = palette.yellow_03,
                     },
                     local_ = {
-                        fg = palette.green_04,
+                        fg = palette.green_05,
                     },
                     rare = {
                         fg = palette.blue_04,
@@ -130,18 +130,29 @@ local themes = {
                 },
                 status_line = {
                     bg = palette.dark_02,
-                    fg = palette.grey_07,
+                    fg = palette.grey_08,
                     medium = {
                         bg = palette.dark_03,
                         fg = palette.grey_04,
+                        git = {
+                            added = {
+                                fg = palette.green_05,
+                            },
+                            changed = {
+                                fg = palette.yellow_03,
+                            },
+                            removed = {
+                                fg = palette.red_03,
+                            },
+                        },
                     },
                     mode = {
-                        bg = palette.green_04,
+                        bg = palette.green_05,
                         fg = palette.dark_02,
                     },
                     lsp = {
                         active = {
-                            fg = palette.green_04,
+                            fg = palette.green_05,
                         },
                     },
                     icon = {
@@ -180,7 +191,7 @@ local themes = {
                     fg = palette.light_01,
                 },
                 string = {
-                    fg = palette.green_04,
+                    fg = palette.green_05,
                 },
                 character = {
                     fg = palette.blue_03,
@@ -201,13 +212,13 @@ local themes = {
                     fg = palette.blue_02,
                 },
                 operator = {
-                    fg = palette.grey_07,
+                    fg = palette.grey_08,
                 },
                 type = {
-                    fg = palette.grey_06,
+                    fg = palette.grey_07,
                 },
                 special = {
-                    fg = palette.blue_03,
+                    fg = palette.blue_02,
                 },
                 delimiter = {
                     fg = palette.grey_05,
@@ -223,7 +234,7 @@ local themes = {
                 },
                 added = {
                     fg = palette.light_02,
-                    bg = palette.green_04,
+                    bg = palette.green_05,
                 },
                 changed = {
                     fg = palette.light_02,
@@ -236,7 +247,7 @@ local themes = {
             },
             git = {
                 added = {
-                    fg = palette.green_04,
+                    fg = palette.green_05,
                     inline = {
                         bg = palette.green_02,
                     },
@@ -294,7 +305,7 @@ local themes = {
                     fg = palette.blue_04,
                 },
                 ok = {
-                    fg = palette.green_04,
+                    fg = palette.green_05,
                 },
                 unnecessary = {
                     fg = palette.grey_02,
@@ -307,7 +318,7 @@ local themes = {
                 normal = {
                     bg = config.transparent_background and palette.none
                         or palette.dark_03,
-                    fg = palette.grey_07,
+                    fg = palette.grey_08,
                 },
                 win_separator = {
                     bg = main.bg,
@@ -332,11 +343,11 @@ local themes = {
                         fg = palette.grey_02,
                     },
                     staged = {
-                        fg = palette.green_04,
+                        fg = palette.green_05,
                     },
                 },
                 exec_file = {
-                    fg = palette.green_04,
+                    fg = palette.green_05,
                 },
             },
             cmp_item = {
@@ -364,7 +375,7 @@ local themes = {
             },
             alpha = {
                 header = {
-                    fg = palette.green_04,
+                    fg = palette.green_05,
                 },
             },
         }
@@ -428,7 +439,7 @@ local themes = {
                 },
                 diff = {
                     add = {
-                        bg = palette.green_06,
+                        bg = palette.green_07,
                     },
                     change = {
                         bg = palette.yellow_03,
@@ -437,7 +448,7 @@ local themes = {
                         bg = palette.red_05,
                     },
                     text = {
-                        bg = palette.green_06,
+                        bg = palette.green_07,
                     },
                 },
                 folded = {
@@ -452,14 +463,14 @@ local themes = {
                         fg = palette.red_03,
                     },
                     mode = {
-                        fg = palette.green_04,
+                        fg = palette.green_05,
                     },
                     warning = {
                         fg = palette.yellow_02,
                     },
                 },
                 non_text = {
-                    fg = palette.grey_07,
+                    fg = palette.grey_08,
                 },
                 float = {
                     bg = main.bg,
@@ -469,7 +480,7 @@ local themes = {
                     },
                 },
                 pmenu = {
-                    bg = palette.grey_07,
+                    bg = palette.grey_08,
                     fg = palette.grey_04,
                     sel = {
                         bg = palette.light_01,
@@ -493,7 +504,7 @@ local themes = {
                         fg = palette.yellow_03,
                     },
                     local_ = {
-                        fg = palette.green_04,
+                        fg = palette.green_05,
                     },
                     rare = {
                         fg = palette.blue_04,
@@ -503,16 +514,27 @@ local themes = {
                     bg = palette.light_01,
                     fg = palette.grey_01,
                     medium = {
-                        bg = palette.grey_07,
+                        bg = palette.grey_08,
                         fg = palette.grey_01,
+                        git = {
+                            added = {
+                                fg = palette.green_02,
+                            },
+                            changed = {
+                                fg = palette.yellow_02,
+                            },
+                            removed = {
+                                fg = palette.red_03,
+                            },
+                        },
                     },
                     mode = {
-                        bg = palette.green_04,
+                        bg = palette.green_05,
                         fg = palette.dark_02,
                     },
                     lsp = {
                         active = {
-                            fg = palette.green_03,
+                            fg = palette.green_04,
                         },
                     },
                     icon = {
@@ -545,7 +567,7 @@ local themes = {
             },
             syntax = {
                 comment = {
-                    fg = palette.purple_02,
+                    fg = palette.green_03,
                 },
                 constant = {
                     fg = palette.light_01,
@@ -572,13 +594,13 @@ local themes = {
                     fg = palette.blue_01,
                 },
                 operator = {
-                    fg = palette.grey_07,
+                    fg = palette.grey_08,
                 },
                 type = {
-                    fg = palette.grey_03,
+                    fg = palette.grey_01,
                 },
                 special = {
-                    fg = palette.blue_03,
+                    fg = palette.blue_01,
                 },
                 delimiter = {
                     fg = palette.grey_05,
@@ -594,7 +616,7 @@ local themes = {
                 },
                 added = {
                     fg = palette.light_02,
-                    bg = palette.green_04,
+                    bg = palette.green_05,
                 },
                 changed = {
                     fg = palette.light_02,
@@ -607,15 +629,15 @@ local themes = {
             },
             git = {
                 added = {
-                    fg = palette.green_04,
+                    fg = palette.green_05,
                     inline = {
-                        bg = palette.green_05,
+                        bg = palette.green_06,
                     },
                 },
                 changed = {
                     fg = palette.yellow_03,
                     inline = {
-                        bg = palette.green_05,
+                        bg = palette.green_06,
                     },
                 },
                 removed = {
@@ -665,7 +687,7 @@ local themes = {
                     fg = palette.blue_04,
                 },
                 ok = {
-                    fg = palette.green_03,
+                    fg = palette.green_04,
                 },
                 unnecessary = {
                     fg = palette.grey_02,
@@ -703,16 +725,16 @@ local themes = {
                         fg = palette.grey_02,
                     },
                     staged = {
-                        fg = palette.green_03,
+                        fg = palette.green_04,
                     },
                 },
                 exec_file = {
-                    fg = palette.green_03,
+                    fg = palette.green_04,
                 },
             },
             cmp_item = {
                 abbr = {
-                    fg = palette.grey_06,
+                    fg = palette.grey_07,
                 },
                 kind = {
                     fg = palette.grey_02,
@@ -734,7 +756,7 @@ local themes = {
             },
             alpha = {
                 header = {
-                    fg = palette.green_04,
+                    fg = palette.green_05,
                 },
             },
         }

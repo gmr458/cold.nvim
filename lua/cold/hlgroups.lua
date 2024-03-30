@@ -340,15 +340,15 @@ function M.get(theme)
 
         ['StatusLineGitDiffAdded'] = {
             bg = theme.editor.status_line.medium.bg,
-            fg = theme.git.added.fg,
+            fg = theme.editor.status_line.medium.git.added.fg,
         },
         ['StatusLineGitDiffChanged'] = {
             bg = theme.editor.status_line.medium.bg,
-            fg = theme.git.changed.fg,
+            fg = theme.editor.status_line.medium.git.changed.fg,
         },
         ['StatusLineGitDiffRemoved'] = {
             bg = theme.editor.status_line.medium.bg,
-            fg = theme.git.removed.fg,
+            fg = theme.editor.status_line.medium.git.removed.fg,
         },
 
         ['StatusLineGitBranchIcon'] = {

@@ -11,8 +11,9 @@ local palette = {
     grey_03 = '#5c5c5c',
     grey_04 = '#787878',
     grey_05 = '#888888',
-    grey_06 = '#a8a8a8',
-    grey_07 = '#b8b8b8',
+    grey_06 = '#9c9c9c',
+    grey_07 = '#a8a8a8',
+    grey_08 = '#b8b8b8',
 
     light_01 = '#c8c8c8',
     light_02 = '#d8d8d8',
@@ -34,10 +35,11 @@ local palette = {
 
     green_01 = '#383E2A',
     green_02 = '#4C5B2B',
-    green_03 = '#76946A',
-    green_04 = '#9EBC9F',
-    green_05 = '#D7E8B1',
-    green_06 = '#EBF1DD',
+    green_03 = '#5e7655',
+    green_04 = '#76946A',
+    green_05 = '#9EBC9F',
+    green_06 = '#D7E8B1',
+    green_07 = '#EBF1DD',
 
     blue_01 = '#346969',
     blue_02 = '#739393',
