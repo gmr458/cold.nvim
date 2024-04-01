@@ -567,7 +567,7 @@ local themes = {
             },
             syntax = {
                 comment = {
-                    fg = palette.green_03,
+                    fg = palette.grey_03,
                 },
                 constant = {
                     fg = palette.light_01,
@@ -582,7 +582,7 @@ local themes = {
                     fg = palette.dark_04,
                 },
                 boolean = {
-                    fg = palette.blue_02,
+                    fg = palette.blue_01,
                 },
                 identifier = {
                     fg = palette.dark_02,

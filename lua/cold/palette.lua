@@ -35,7 +35,7 @@ local palette = {
 
     green_01 = '#383E2A',
     green_02 = '#4C5B2B',
-    green_03 = '#5e7655',
+    green_03 = '#548b40',
     green_04 = '#76946A',
     green_05 = '#9EBC9F',
     green_06 = '#D7E8B1',
