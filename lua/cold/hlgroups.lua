@@ -201,6 +201,7 @@ function M.get(theme)
         ['@lsp.type.variable'] = { link = '@lsp' },
 
         ['@lsp.typemod.enumMember.defaultLibrary'] = { link = 'Keyword' },
+        ['@lsp.typemod.keyword.async'] = { link = 'Keyword' },
 
         -- Diagnostics
         ['DiagnosticError'] = { fg = theme.diagnostic.error.fg },
