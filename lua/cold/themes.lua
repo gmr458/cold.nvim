@@ -378,6 +378,23 @@ local themes = {
                     fg = palette.green_05,
                 },
             },
+            grapple = {
+                normal = {
+                    bg = palette.dark_02,
+                },
+                border = {
+                    bg = palette.dark_02,
+                    fg = palette.dark_02,
+                },
+                title = {
+                    bg = palette.green_05,
+                    fg = palette.dark_02,
+                },
+                footer = {
+                    bg = palette.dark_03,
+                    fg = palette.grey_04,
+                },
+            },
         }
 
         return theme
@@ -757,6 +774,23 @@ local themes = {
             alpha = {
                 header = {
                     fg = palette.green_05,
+                },
+            },
+            grapple = {
+                normal = {
+                    bg = palette.light_01,
+                },
+                border = {
+                    bg = palette.light_01,
+                    fg = palette.light_01,
+                },
+                title = {
+                    bg = palette.green_05,
+                    fg = palette.dark_02,
+                },
+                footer = {
+                    bg = palette.grey_08,
+                    fg = palette.grey_01,
                 },
             },
         }

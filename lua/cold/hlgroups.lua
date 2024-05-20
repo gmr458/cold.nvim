@@ -383,6 +383,23 @@ function M.get(theme)
         },
         ['GitSignsDelete'] = { fg = theme.git.removed.fg },
         ['GitSignsDeleteInline'] = { bg = theme.git.removed.inline.bg },
+
+        -- github.com/cbochs/grapple.nvim
+        ['GrappleNormal'] = {
+            bg = theme.grapple.normal.bg,
+        },
+        ['GrappleBorder'] = {
+            bg = theme.grapple.border.bg,
+            fg = theme.grapple.border.fg,
+        },
+        ['GrappleTitle'] = {
+            bg = theme.grapple.title.bg,
+            fg = theme.grapple.title.fg,
+        },
+        ['GrappleFooter'] = {
+            bg = theme.grapple.footer.bg,
+            fg = theme.grapple.footer.fg,
+        },
     }
 end
 
