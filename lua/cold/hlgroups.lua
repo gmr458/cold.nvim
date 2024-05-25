@@ -400,6 +400,17 @@ function M.get(theme)
             bg = theme.grapple.footer.bg,
             fg = theme.grapple.footer.fg,
         },
+
+        -- github.com/nvim-neotest/neotest
+        ['NeotestAdapterName'] = { link = 'Comment' },
+        ['NeotestUnknown'] = { link = 'Comment' },
+        ['NeotestIndent'] = { link = 'Comment' },
+        ['NeotestExpandMarker'] = { link = 'Comment' },
+        ['NeotestFailed'] = { link = 'ErrorMsg' },
+        ['NeotestPassed'] = { link = 'DiagnosticOk' },
+        ['NeotestSkipped'] = { link = 'WarningMsg' },
+        ['NeotestFile'] = { link = 'Normal' },
+        ['NeotestDir'] = { link = 'Directory' },
     }
 end
 
