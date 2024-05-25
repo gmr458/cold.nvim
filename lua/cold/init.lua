@@ -1,20 +1,29 @@
 local M = {}
 
 --- @class Config
---- @field cursorline? boolean
---- @field transparent_background? boolean
---- @field nvim_tree_darker? boolean
---- @field undercurl? boolean
---- @field italic_keyword? boolean
---- @field custom_dark_background? string
---- @field custom_light_background? string
---- @field custom_statusline_dark_background? string
 M.config = {
     cursorline = vim.o.cursorline,
     transparent_background = false,
     nvim_tree_darker = false,
     undercurl = true,
+    italic_string = false,
     italic_keyword = false,
+    italic_type = {
+        normal = false,
+        builtin = false,
+        definition = false,
+    },
+    italic_constant = {
+        builtin = false,
+    },
+    italic_function = {
+        declaration = false,
+        call = false,
+        method = {
+            declaration = false,
+            call = false,
+        },
+    },
     custom_dark_background = nil,
     custom_light_background = nil,
     custom_statusline_dark_background = nil,

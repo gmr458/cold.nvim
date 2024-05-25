@@ -189,9 +189,13 @@ local themes = {
                 },
                 constant = {
                     fg = palette.light_01,
+                    italic = {
+                        builtin = config.italic_constant.builtin,
+                    },
                 },
                 string = {
                     fg = palette.green_05,
+                    italic = config.italic_string,
                 },
                 character = {
                     fg = palette.blue_03,
@@ -207,15 +211,29 @@ local themes = {
                 },
                 function_ = {
                     fg = palette.purple_03,
+                    italic = {
+                        declaration = config.italic_function.declaration,
+                        call = config.italic_function.call,
+                        method = {
+                            declaration = config.italic_function.method.declaration,
+                            call = config.italic_function.method.call,
+                        },
+                    },
                 },
                 keyword = {
                     fg = palette.blue_02,
+                    italic = config.italic_keyword,
                 },
                 operator = {
                     fg = palette.grey_08,
                 },
                 type = {
                     fg = palette.grey_07,
+                    italic = {
+                        normal = config.italic_type.normal,
+                        builtin = config.italic_type.builtin,
+                        definition = config.italic_type.definition,
+                    },
                 },
                 special = {
                     fg = palette.blue_02,
@@ -588,9 +606,13 @@ local themes = {
                 },
                 constant = {
                     fg = palette.light_01,
+                    italic = {
+                        builtin = config.italic_constant.builtin,
+                    },
                 },
                 string = {
                     fg = palette.green_03,
+                    italic = config.italic_string,
                 },
                 character = {
                     fg = palette.blue_03,
@@ -606,6 +628,14 @@ local themes = {
                 },
                 function_ = {
                     fg = palette.purple_01,
+                    italic = {
+                        declaration = config.italic_function.declaration,
+                        call = config.italic_function.call,
+                        method = {
+                            declaration = config.italic_function.method.declaration,
+                            call = config.italic_function.method.call,
+                        },
+                    },
                 },
                 keyword = {
                     fg = palette.blue_01,
@@ -615,6 +645,11 @@ local themes = {
                 },
                 type = {
                     fg = palette.grey_01,
+                    italic = {
+                        normal = config.italic_type.normal,
+                        builtin = config.italic_type.builtin,
+                        definition = config.italic_type.definition,
+                    },
                 },
                 special = {
                     fg = palette.blue_01,

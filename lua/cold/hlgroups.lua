@@ -1,6 +1,7 @@
 local M = {}
 
 --- @param theme ThemeDark | ThemeLight
+--- @return table<string, vim.api.keyset.highlight>
 function M.get(theme)
     return {
         -- Editor
@@ -103,30 +104,76 @@ function M.get(theme)
         ['Comment'] = { fg = theme.syntax.comment.fg },
 
         ['Constant'] = { fg = theme.syntax.identifier.fg },
-        ['String'] = { fg = theme.syntax.string.fg },
+        ['String'] = {
+            fg = theme.syntax.string.fg,
+            italic = theme.syntax.string.italic,
+        },
         ['Character'] = { fg = theme.syntax.character.fg },
         ['Number'] = { fg = theme.syntax.number.fg },
-        ['Boolean'] = { fg = theme.syntax.boolean.fg },
+        ['Boolean'] = {
+            fg = theme.syntax.boolean.fg,
+            italic = theme.syntax.keyword.italic,
+        },
         ['Float'] = { fg = theme.syntax.number.fg },
 
         ['Identifier'] = { fg = theme.syntax.identifier.fg },
-        ['Function'] = { fg = theme.syntax.function_.fg },
+        ['Function'] = {
+            fg = theme.syntax.function_.fg,
+            italic = theme.syntax.function_.italic.declaration,
+        },
+        ['Statement'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Conditional'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Repeat'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Label'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Operator'] = {
+            fg = theme.syntax.keyword.fg,
+        },
+        ['Keyword'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Exception'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
 
-        ['Statement'] = { fg = theme.syntax.keyword.fg },
-        ['Conditional'] = { fg = theme.syntax.keyword.fg },
-        ['Repeat'] = { fg = theme.syntax.keyword.fg },
-        ['Label'] = { fg = theme.syntax.keyword.fg },
-        ['Operator'] = { fg = theme.syntax.keyword.fg },
-        ['Keyword'] = { fg = theme.syntax.keyword.fg },
-        ['Exception'] = { fg = theme.syntax.keyword.fg },
+        ['PreProc'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Include'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Define'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['Macro'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
+        ['PreCondit'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.keyword.italic,
+        },
 
-        ['PreProc'] = { fg = theme.syntax.keyword.fg },
-        ['Include'] = { fg = theme.syntax.keyword.fg },
-        ['Define'] = { fg = theme.syntax.keyword.fg },
-        ['Macro'] = { fg = theme.syntax.keyword.fg },
-        ['PreCondit'] = { fg = theme.syntax.keyword.fg },
-
-        ['Type'] = { fg = theme.syntax.type.fg },
+        ['Type'] = {
+            fg = theme.syntax.type.fg,
+            italic = theme.syntax.type.italic.normal,
+        },
         ['StorageClass'] = { fg = theme.syntax.type.fg },
         ['Structure'] = { fg = theme.syntax.type.fg },
         ['Typedef'] = { fg = theme.syntax.type.fg },
@@ -158,20 +205,58 @@ function M.get(theme)
 
         -- Treesitter
         ['@attribute'] = { link = 'Identifier' },
-        ['@constant.builtin'] = { link = 'Keyword' },
+        ['@constant.builtin'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.constant.italic.builtin,
+        },
         ['@constructor'] = { link = 'Type' },
         ['@constructor.lua'] = { link = 'Delimiter' },
         ['@diff.delta'] = { link = 'DiffChange' },
         ['@diff.minus'] = { link = 'DiffDelete' },
         ['@diff.plus'] = { link = 'DiffAdd' },
-        ['@function.builtin'] = { link = 'Function' },
-        ['@function.macro'] = { link = 'Macro' },
+        ['@function'] = {
+            fg = theme.syntax.function_.fg,
+            italic = theme.syntax.function_.italic.declaration,
+        },
+        ['@function.builtin'] = {
+            fg = theme.syntax.function_.fg,
+            italic = theme.syntax.function_.italic.declaration,
+        },
+        ['@function.call'] = {
+            fg = theme.syntax.function_.fg,
+            italic = theme.syntax.function_.italic.call,
+        },
+        ['@function.method'] = {
+            fg = theme.syntax.function_.fg,
+            italic = theme.syntax.function_.italic.method.declaration,
+        },
+        ['@function.method.call'] = {
+            fg = theme.syntax.function_.fg,
+            italic = theme.syntax.function_.italic.method.call,
+        },
+        ['@function.macro'] = {
+            fg = theme.syntax.function_.fg,
+            italic = theme.syntax.function_.italic.call,
+        },
         ['@module'] = { link = 'Identifier' },
         ['@storageclass.rust'] = { link = 'Keyword' },
         ['@tag.attribute'] = { link = 'Identifier' },
         ['@tag.delimiter'] = { fg = theme.treesitter.tag.delimiter.fg },
         ['@tag.javascript'] = { link = 'Type' },
         ['@tag.tsx'] = { link = 'Type' },
+        ['@type'] = {
+            fg = theme.syntax.type.fg,
+            italic = theme.syntax.type.italic.normal,
+        },
+
+        ['@type.definition'] = {
+            fg = theme.syntax.type.fg,
+            italic = theme.syntax.type.italic.definition,
+        },
+        ['@type.builtin'] = {
+            fg = theme.syntax.special.fg,
+            italic = theme.syntax.type.italic.builtin,
+        },
         ['@type.qualifier'] = { link = 'Keyword' },
         ['@variable'] = { link = 'Identifier' },
         ['@variable.builtin'] = { link = 'Identifier' },
@@ -193,7 +278,7 @@ function M.get(theme)
         ['LspInlayHint'] = { link = 'Comment' },
 
         -- LSP Semantic tokens
-        ['@lsp.mod.async'] = { link = 'Function' },
+        -- ['@lsp.mod.async'] = { link = 'Function' },
 
         ['@lsp.type.keyword'] = { link = 'Keyword' },
         ['@lsp.type.macro'] = { link = 'Macro' },
