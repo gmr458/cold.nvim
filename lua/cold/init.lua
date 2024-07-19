@@ -34,24 +34,20 @@ function M.setup(config)
     M.config = vim.tbl_deep_extend('force', M.config, config or {})
 end
 
---- @param theme ThemeDark | ThemeLight
---- @param background 'dark' | 'light'
-function M.compile(theme, background)
+--- @param theme_dark ThemeDark
+--- @param theme_light ThemeLight
+function M.compile(theme_dark, theme_light)
     local lines = {
-        string.format(
-            [[
-return string.dump(function()
-vim.o.termguicolors=true
-if vim.g.colors_name then vim.cmd "hi clear" end
+        string.format [[return string.dump(function()
+vim.cmd.highlight('clear')
 vim.g.colors_name="cold"
-vim.o.background="%s"
-local h=vim.api.nvim_set_hl]],
-            background
-        ),
+local h=vim.api.nvim_set_hl
+vim.opt.termguicolors=true]],
     }
 
-    local hgs = require('cold.hlgroups').get(theme)
-    for group, color in pairs(hgs) do
+    table.insert(lines, 'if vim.o.background == \'dark\' then')
+    local hgs_dark = require('cold.hlgroups').get(theme_dark)
+    for group, color in pairs(hgs_dark) do
         table.insert(
             lines,
             string.format(
@@ -61,6 +57,22 @@ local h=vim.api.nvim_set_hl]],
             )
         )
     end
+
+    table.insert(lines, 'else')
+
+    local hgs_light = require('cold.hlgroups').get(theme_light)
+    for group, color in pairs(hgs_light) do
+        table.insert(
+            lines,
+            string.format(
+                [[h(0,"%s",%s)]],
+                group,
+                vim.inspect(color, { newline = '', indent = '' })
+            )
+        )
+    end
+    table.insert(lines, 'end')
+
     table.insert(lines, 'end,true)')
 
     local cold_cache_dir = vim.fn.stdpath 'cache' .. '/cold/'
@@ -87,7 +99,7 @@ local h=vim.api.nvim_set_hl]],
         return
     end
 
-    local file = io.open(cold_cache_dir .. background, 'wb')
+    local file = io.open(cold_cache_dir .. '/cache', 'wb')
     if file then
         file:write(f())
         file:close()
@@ -99,21 +111,22 @@ local h=vim.api.nvim_set_hl]],
     end
 end
 
---- @param background 'dark'|'light'
-local function compile_if_not_exist(background)
-    local compiled = vim.fn.stdpath 'cache' .. '/cold/' .. background
+local function compile_if_not_exist()
+    local compiled = vim.fn.stdpath 'cache' .. '/cold/cache'
     if vim.fn.filereadable(compiled) == 0 then
         local palette = require 'cold.palette'
-        local theme = require('cold.themes')[background](palette, M.config)
-        M.compile(theme, background)
+
+        local theme_dark = require('cold.themes').dark(palette, M.config)
+        local theme_light = require('cold.themes').light(palette, M.config)
+
+        M.compile(theme_dark, theme_light)
     end
 end
 
 function M.load()
-    compile_if_not_exist 'dark'
-    compile_if_not_exist 'light'
+    compile_if_not_exist()
 
-    local cache = vim.fn.stdpath 'cache' .. '/cold/' .. vim.o.background
+    local cache = vim.fn.stdpath 'cache' .. '/cold/cache'
     local f = loadfile(cache)
     if f ~= nil then
         f()
@@ -128,11 +141,10 @@ end
 vim.api.nvim_create_user_command('ColdCompile', function()
     local palette = require 'cold.palette'
 
-    local dark_theme = require('cold.themes').dark(palette, M.config)
-    M.compile(dark_theme, 'dark')
+    local theme_dark = require('cold.themes').dark(palette, M.config)
+    local theme_light = require('cold.themes').light(palette, M.config)
 
-    local light_theme = require('cold.themes').light(palette, M.config)
-    M.compile(light_theme, 'light')
+    M.compile(theme_dark, theme_light)
 
     vim.notify('[cold.nvim] colorscheme compiled', vim.log.levels.INFO)
     vim.cmd.colorscheme 'cold'
