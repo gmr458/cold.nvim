@@ -413,6 +413,11 @@ local themes = {
                     fg = palette.grey_04,
                 },
             },
+            mini = {
+                indentscope = {
+                    fg = palette.dark_05,
+                },
+            },
         }
 
         return theme
@@ -826,6 +831,11 @@ local themes = {
                 footer = {
                     bg = palette.grey_08,
                     fg = palette.grey_01,
+                },
+            },
+            mini = {
+                indentscope = {
+                    fg = palette.light_01,
                 },
             },
         }
