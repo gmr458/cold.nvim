@@ -150,18 +150,4 @@ vim.api.nvim_create_user_command('ColdCompile', function()
     vim.cmd.colorscheme 'cold'
 end, {})
 
-function M.term_supports_undercurl()
-    local term = os.getenv 'TERM'
-
-    local terminals = {
-        ['alacritty'] = true,
-        ['wezterm'] = true,
-        ['foot'] = false,
-        ['xterm-256color'] = true,
-        ['xterm-kitty'] = true,
-    }
-
-    return terminals[term]
-end
-
 return M
