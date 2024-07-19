@@ -147,7 +147,7 @@ local themes = {
                         },
                     },
                     mode = {
-                        bg = palette.green_05,
+                        bg = palette.green_04,
                         fg = palette.dark_02,
                     },
                     lsp = {
