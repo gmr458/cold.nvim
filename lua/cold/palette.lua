@@ -1,4 +1,4 @@
---- @class Palette
+--- @class ColdPalette
 local palette = {
     dark_01 = '#0e0e0e',
     dark_02 = '#111111',

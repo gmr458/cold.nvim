@@ -1,6 +1,6 @@
 local M = {}
 
---- @param theme ThemeDark | ThemeLight
+--- @param theme ColdThemeDark | ColdThemeLight
 --- @return table<string, vim.api.keyset.highlight>
 function M.get(theme)
     return {

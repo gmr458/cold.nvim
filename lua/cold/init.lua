@@ -1,6 +1,6 @@
 local M = {}
 
---- @class Config
+--- @class ColdConfig
 M.config = {
     cursorline = vim.o.cursorline,
     transparent_background = false,
@@ -29,13 +29,13 @@ M.config = {
     custom_statusline_dark_background = nil,
 }
 
---- @overload fun(config?: Config)
+--- @overload fun(config?: ColdConfig)
 function M.setup(config)
     M.config = vim.tbl_deep_extend('force', M.config, config or {})
 end
 
---- @param theme_dark ThemeDark
---- @param theme_light ThemeLight
+--- @param theme_dark ColdThemeDark
+--- @param theme_light ColdThemeLight
 function M.compile(theme_dark, theme_light)
     local lines = {
         string.format [[return string.dump(function()

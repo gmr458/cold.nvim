@@ -1,8 +1,8 @@
 --- @class Themes
 local themes = {
-    --- @param palette Palette
-    --- @param config Config
-    --- @return ThemeDark
+    --- @param palette ColdPalette
+    --- @param config ColdConfig
+    --- @return ColdThemeDark
     dark = function(palette, config)
         local main = {
             bg = palette.dark_01,
@@ -20,7 +20,7 @@ local themes = {
             main.bg = palette.none
         end
 
-        --- @class ThemeDark
+        --- @class ColdThemeDark
         local theme = {
             bg = main.bg,
             fg = main.fg,
@@ -422,9 +422,9 @@ local themes = {
 
         return theme
     end,
-    --- @param palette Palette
-    --- @param config Config
-    --- @return ThemeLight
+    --- @param palette ColdPalette
+    --- @param config ColdConfig
+    --- @return ColdThemeLight
     light = function(palette, config)
         local main = {
             bg = palette.light_04,
@@ -442,7 +442,7 @@ local themes = {
             main.bg = 'NONE'
         end
 
-        --- @class ThemeLight
+        --- @class ColdThemeLight
         local theme = {
             bg = main.bg,
             fg = main.fg,
