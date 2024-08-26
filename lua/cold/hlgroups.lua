@@ -346,6 +346,14 @@ function M.get(theme)
             bg = theme.nvim_tree.normal.bg,
             fg = theme.nvim_tree.normal.fg,
         },
+        ['NvimTreeNormalFloat'] = {
+            bg = theme.nvim_tree.normal.bg,
+            fg = theme.nvim_tree.normal.fg,
+        },
+        ['NvimTreeNormalFloatBorder'] = {
+            bg = theme.nvim_tree.normal.bg,
+            fg = theme.nvim_tree.normal.bg,
+        },
         ['NvimTreeWinSeparator'] = { bg = theme.bg, fg = theme.bg },
         ['NvimTreeFolderIcon'] = { fg = theme.nvim_tree.folder.icon.fg },
         ['NvimTreeRootFolder'] = { fg = theme.nvim_tree.root_folder.fg },
@@ -356,6 +364,7 @@ function M.get(theme)
         ['NvimTreeGitStaged'] = { fg = theme.nvim_tree.git.staged.fg },
         ['NvimTreeExecFile'] = { fg = theme.nvim_tree.exec_file.fg },
         ['NvimTreeIndentMarker'] = { link = 'Comment' },
+        ['NvimTreeSignColumn'] = { bg = theme.nvim_tree.normal.bg },
 
         -- github.com/hrsh7th/nvim-cmp
         ['CmpItemAbbrDefault'] = { fg = theme.cmp_item.abbr.fg },
