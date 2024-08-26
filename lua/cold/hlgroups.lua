@@ -499,6 +499,10 @@ function M.get(theme)
 
         -- github.com/echasnovski/mini.indentscope
         ['MiniIndentscopeSymbol'] = { fg = theme.mini.indentscope.fg },
+
+        -- basic kotlin support
+        ['KtStructure'] = { link = 'Keyword' },
+        ['KtModifier'] = { link = 'Keyword' },
     }
 end
 
