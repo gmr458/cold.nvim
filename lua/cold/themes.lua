@@ -35,7 +35,7 @@ local themes = {
                     bg = main.fg,
                     fg = main.bg,
                     search = {
-                        bg = palette.grey_01,
+                        bg = palette.brown_01,
                     },
                     column = {
                         bg = palette.dark_05,
@@ -112,7 +112,7 @@ local themes = {
                     },
                 },
                 search = {
-                    bg = palette.grey_01,
+                    bg = palette.brown_01,
                 },
                 spell = {
                     bad = {

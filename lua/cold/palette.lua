@@ -52,6 +52,8 @@ local palette = {
 
     pink_01 = '#C493B0',
 
+    brown_01 = '#452b04',
+
     none = 'NONE',
 }
 
