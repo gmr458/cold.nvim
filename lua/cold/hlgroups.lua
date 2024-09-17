@@ -472,6 +472,35 @@ function M.get(theme)
             fg = theme.fzf.preview.title.fg,
         },
 
+        -- github.com/nvim-telescope/telescope.nvim
+        ['TelescopeNormal'] = { bg = theme.telescope.normal.bg },
+        ['TelescopeBorder'] = {
+            bg = theme.telescope.border.bg,
+            fg = theme.telescope.border.fg,
+        },
+        ['TelescopePreviewNormal'] = {
+            bg = theme.telescope.preview.normal.bg,
+        },
+        ['TelescopePreviewBorder'] = {
+            bg = theme.telescope.preview.border.bg,
+            fg = theme.telescope.preview.border.fg,
+        },
+        ['TelescopePreviewTitle'] = {
+            bg = theme.telescope.preview.title.bg,
+            fg = theme.telescope.preview.title.fg,
+        },
+        ['TelescopePromptNormal'] = {
+            bg = theme.telescope.prompt.normal.bg,
+        },
+        ['TelescopePromptBorder'] = {
+            bg = theme.telescope.prompt.border.bg,
+            fg = theme.telescope.prompt.border.fg,
+        },
+        ['TelescopePromptTitle'] = {
+            bg = theme.telescope.prompt.title.bg,
+            fg = theme.telescope.prompt.title.fg,
+        },
+
         -- github.com/goolord/alpha-nvim - custom hlgroup for header
         ['AlphaHeader'] = { fg = theme.alpha.header.fg },
 

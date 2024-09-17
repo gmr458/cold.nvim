@@ -399,6 +399,39 @@ local themes = {
                     },
                 },
             },
+            telescope = {
+                normal = {
+                    bg = palette.dark_04,
+                },
+                border = {
+                    bg = palette.dark_04,
+                    fg = palette.dark_04,
+                },
+                preview = {
+                    normal = {
+                        bg = main.bg,
+                    },
+                    border = {
+                        bg = main.bg,
+                        fg = main.bg,
+                    },
+                    title = {
+                        bg = main.bg,
+                        fg = main.bg,
+                    },
+                },
+                prompt = {
+                    normal = { bg = palette.dark_03 },
+                    border = {
+                        bg = palette.dark_03,
+                        fg = palette.dark_03,
+                    },
+                    title = {
+                        bg = palette.dark_03,
+                        fg = palette.dark_03,
+                    },
+                },
+            },
             alpha = {
                 header = {
                     fg = palette.green_05,
@@ -824,6 +857,39 @@ local themes = {
                     title = {
                         bg = main.bg,
                         fg = main.bg,
+                    },
+                },
+            },
+            telescope = {
+                normal = {
+                    bg = palette.dark_04,
+                },
+                border = {
+                    bg = palette.dark_04,
+                    fg = palette.dark_04,
+                },
+                preview = {
+                    normal = {
+                        bg = main.bg,
+                    },
+                    border = {
+                        bg = main.bg,
+                        fg = main.bg,
+                    },
+                    title = {
+                        bg = main.bg,
+                        fg = main.bg,
+                    },
+                },
+                prompt = {
+                    normal = { bg = palette.dark_03 },
+                    border = {
+                        bg = palette.dark_03,
+                        fg = palette.dark_03,
+                    },
+                    title = {
+                        bg = palette.dark_03,
+                        fg = palette.dark_03,
                     },
                 },
             },
