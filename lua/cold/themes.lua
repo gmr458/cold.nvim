@@ -389,6 +389,14 @@ local themes = {
                     normal = {
                         bg = main.bg,
                     },
+                    border = {
+                        bg = main.bg,
+                        fg = main.bg,
+                    },
+                    title = {
+                        bg = main.bg,
+                        fg = main.bg,
+                    },
                 },
             },
             alpha = {
@@ -808,6 +816,14 @@ local themes = {
                 preview = {
                     normal = {
                         bg = main.bg,
+                    },
+                    border = {
+                        bg = main.bg,
+                        fg = main.bg,
+                    },
+                    title = {
+                        bg = main.bg,
+                        fg = main.bg,
                     },
                 },
             },
