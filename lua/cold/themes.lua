@@ -290,9 +290,15 @@ local themes = {
                     },
                 },
                 context = {
-                    bg = palette.dark_05,
+                    bg = config.treesitter_context_bg and palette.dark_05
+                        or main.bg,
                     line_number = {
-                        bg = palette.dark_05,
+                        bg = config.treesitter_context_bg and palette.dark_05
+                            or main.bg,
+                    },
+                    bottom = {
+                        underline = not config.treesitter_context_bg,
+                        sp = palette.dark_05,
                     },
                 },
             },
@@ -752,9 +758,15 @@ local themes = {
                     },
                 },
                 context = {
-                    bg = palette.light_01,
+                    bg = config.treesitter_context_bg and palette.light_01
+                        or main.bg,
                     line_number = {
-                        bg = palette.light_01,
+                        bg = config.treesitter_context_bg and palette.light_01
+                            or main.bg,
+                    },
+                    bottom = {
+                        underline = not config.treesitter_context_bg,
+                        sp = palette.light_01,
                     },
                 },
             },

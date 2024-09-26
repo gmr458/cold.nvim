@@ -27,6 +27,7 @@ M.config = {
     custom_dark_background = nil,
     custom_light_background = nil,
     custom_statusline_dark_background = nil,
+    treesitter_context_bg = false,
 }
 
 --- @param theme_dark ColdThemeDark
