@@ -467,6 +467,20 @@ local themes = {
                     fg = palette.dark_05,
                 },
             },
+            lazy = {
+                button = {
+                    bg = config.float_borderless and palette.dark_03 or main.bg,
+                },
+                progress = {
+                    done = {
+                        fg = palette.grey_02,
+                    },
+                    todo = {
+                        fg = config.float_borderless and palette.dark_03
+                            or main.bg,
+                    },
+                },
+            },
         }
 
         return theme
@@ -935,6 +949,23 @@ local themes = {
             mini = {
                 indentscope = {
                     fg = palette.light_01,
+                },
+            },
+            lazy = {
+                button = {
+                    bg = config.float_borderless and palette.light_02
+                        or main.bg,
+                },
+                progress = {
+                    bg = config.float_borderless and palette.light_02
+                        or main.bg,
+                    done = {
+                        fg = palette.blue_01,
+                    },
+                    todo = {
+                        fg = config.float_borderless and palette.light_02
+                            or main.bg,
+                    },
                 },
             },
         }

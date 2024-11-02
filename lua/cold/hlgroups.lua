@@ -553,6 +553,19 @@ function M.get(theme)
         -- basic kotlin support
         ['KtStructure'] = { link = 'Keyword' },
         ['KtModifier'] = { link = 'Keyword' },
+
+        -- github.com/folke/lazy.nvim
+        ['LazyButton'] = {
+            bg = theme.lazy.button.bg,
+        },
+        ['LazyProgressDone'] = {
+            bg = theme.lazy.progress.bg,
+            fg = theme.lazy.progress.done.fg,
+        },
+        ['LazyProgressTodo'] = {
+            bg = theme.lazy.progress.bg,
+            fg = theme.lazy.progress.todo.fg,
+        },
     }
 end
 
