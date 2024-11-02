@@ -91,10 +91,12 @@ local themes = {
                     fg = palette.grey_01,
                 },
                 float = {
-                    bg = main.bg,
+                    bg = config.float_borderless and palette.dark_03 or main.bg,
                     border = {
-                        bg = main.bg,
-                        fg = palette.grey_02,
+                        bg = config.float_borderless and palette.dark_03
+                            or main.bg,
+                        fg = config.float_borderless and palette.dark_03
+                            or palette.grey_02,
                     },
                 },
                 pmenu = {
@@ -560,10 +562,13 @@ local themes = {
                     fg = palette.grey_08,
                 },
                 float = {
-                    bg = main.bg,
+                    bg = config.float_borderless and palette.light_02
+                        or main.bg,
                     border = {
-                        bg = main.bg,
-                        fg = palette.grey_02,
+                        bg = config.float_borderless and palette.light_02
+                            or main.bg,
+                        fg = config.float_borderless and palette.light_02
+                            or palette.grey_02,
                     },
                 },
                 pmenu = {
