@@ -53,7 +53,7 @@ local themes = {
                     bg = palette.grey_01,
                 },
                 directory = {
-                    fg = palette.blue_02,
+                    fg = palette.blue_03,
                 },
                 diff = {
                     add = {
@@ -70,7 +70,7 @@ local themes = {
                     },
                 },
                 folded = {
-                    bg = palette.grey_01,
+                    bg = palette.blue_01,
                 },
                 line_nr = {
                     bg = main.bg,
@@ -127,7 +127,7 @@ local themes = {
                         fg = palette.green_05,
                     },
                     rare = {
-                        fg = palette.blue_04,
+                        fg = palette.blue_05,
                     },
                 },
                 status_line = {
@@ -200,13 +200,13 @@ local themes = {
                     italic = config.italic_string,
                 },
                 character = {
-                    fg = palette.blue_03,
+                    fg = palette.blue_04,
                 },
                 number = {
                     fg = palette.light_02,
                 },
                 boolean = {
-                    fg = palette.blue_02,
+                    fg = palette.blue_03,
                 },
                 identifier = {
                     fg = palette.light_01,
@@ -223,7 +223,7 @@ local themes = {
                     },
                 },
                 keyword = {
-                    fg = palette.blue_02,
+                    fg = palette.blue_03,
                     italic = config.italic_keyword,
                 },
                 operator = {
@@ -238,7 +238,7 @@ local themes = {
                     },
                 },
                 special = {
-                    fg = palette.blue_02,
+                    fg = palette.blue_03,
                 },
                 delimiter = {
                     fg = palette.grey_05,
@@ -325,10 +325,10 @@ local themes = {
                     fg = palette.yellow_03,
                 },
                 info = {
-                    fg = palette.blue_02,
+                    fg = palette.blue_03,
                 },
                 hint = {
-                    fg = palette.blue_04,
+                    fg = palette.blue_05,
                 },
                 ok = {
                     fg = palette.green_05,
@@ -336,7 +336,7 @@ local themes = {
                 unnecessary = {
                     fg = palette.grey_02,
                     special = {
-                        fg = palette.blue_04,
+                        fg = palette.blue_05,
                     },
                 },
             },
@@ -538,7 +538,7 @@ local themes = {
                     bg = palette.light_01,
                 },
                 directory = {
-                    fg = palette.blue_01,
+                    fg = palette.blue_02,
                 },
                 diff = {
                     add = {
@@ -555,7 +555,7 @@ local themes = {
                     },
                 },
                 folded = {
-                    bg = palette.grey_01,
+                    bg = palette.blue_06,
                 },
                 line_nr = {
                     bg = main.bg,
@@ -613,7 +613,7 @@ local themes = {
                         fg = palette.green_05,
                     },
                     rare = {
-                        fg = palette.blue_04,
+                        fg = palette.blue_05,
                     },
                 },
                 status_line = {
@@ -686,13 +686,13 @@ local themes = {
                     italic = config.italic_string,
                 },
                 character = {
-                    fg = palette.blue_03,
+                    fg = palette.blue_04,
                 },
                 number = {
                     fg = palette.dark_04,
                 },
                 boolean = {
-                    fg = palette.blue_01,
+                    fg = palette.blue_02,
                 },
                 identifier = {
                     fg = palette.dark_02,
@@ -709,7 +709,7 @@ local themes = {
                     },
                 },
                 keyword = {
-                    fg = palette.blue_01,
+                    fg = palette.blue_02,
                 },
                 operator = {
                     fg = palette.grey_08,
@@ -723,7 +723,7 @@ local themes = {
                     },
                 },
                 special = {
-                    fg = palette.blue_01,
+                    fg = palette.blue_02,
                 },
                 delimiter = {
                     fg = palette.grey_05,
@@ -810,10 +810,10 @@ local themes = {
                     fg = palette.yellow_02,
                 },
                 info = {
-                    fg = palette.blue_01,
+                    fg = palette.blue_02,
                 },
                 hint = {
-                    fg = palette.blue_04,
+                    fg = palette.blue_05,
                 },
                 ok = {
                     fg = palette.green_04,
@@ -821,7 +821,7 @@ local themes = {
                 unnecessary = {
                     fg = palette.grey_02,
                     special = {
-                        fg = palette.blue_04,
+                        fg = palette.blue_05,
                     },
                 },
             },
@@ -960,7 +960,7 @@ local themes = {
                     bg = config.float_borderless and palette.light_02
                         or main.bg,
                     done = {
-                        fg = palette.blue_01,
+                        fg = palette.blue_02,
                     },
                     todo = {
                         fg = config.float_borderless and palette.light_02

@@ -42,10 +42,12 @@ local palette = {
     green_06 = '#D7E8B1',
     green_07 = '#EBF1DD',
 
-    blue_01 = '#346969',
-    blue_02 = '#739393',
-    blue_03 = '#799496',
-    blue_04 = '#86c1b9',
+    blue_01 = '#1b1f1f',
+    blue_02 = '#346969',
+    blue_03 = '#739393',
+    blue_04 = '#799496',
+    blue_05 = '#86c1b9',
+    blue_06 = '#ced9d9',
 
     purple_01 = '#5E698E',
     purple_02 = '#9ca0b0',
