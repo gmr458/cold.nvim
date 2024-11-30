@@ -520,7 +520,7 @@ local themes = {
                     bg = main.fg,
                     fg = main.bg,
                     search = {
-                        bg = palette.light_01,
+                        bg = palette.yellow_03,
                     },
                     column = {
                         bg = palette.dark_06,
@@ -600,7 +600,7 @@ local themes = {
                     },
                 },
                 search = {
-                    bg = palette.light_01,
+                    bg = palette.yellow_03,
                 },
                 spell = {
                     bad = {
