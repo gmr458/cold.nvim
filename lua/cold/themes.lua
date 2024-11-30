@@ -38,7 +38,7 @@ local themes = {
                         bg = palette.brown_01,
                     },
                     column = {
-                        bg = palette.dark_05,
+                        bg = palette.dark_06,
                     },
                     line = {
                         bg = config.cursorline and palette.dark_03 or main.bg,
@@ -103,7 +103,7 @@ local themes = {
                     bg = palette.dark_04,
                     fg = palette.grey_03,
                     sel = {
-                        bg = palette.dark_05,
+                        bg = palette.dark_06,
                         fg = palette.light_02,
                     },
                     sbar = {
@@ -170,7 +170,7 @@ local themes = {
                     fg = palette.light_02,
                 },
                 visual = {
-                    bg = palette.grey_01,
+                    bg = palette.dark_05,
                 },
                 win = {
                     bar = {
@@ -292,15 +292,15 @@ local themes = {
                     },
                 },
                 context = {
-                    bg = config.treesitter_context_bg and palette.dark_05
+                    bg = config.treesitter_context_bg and palette.dark_06
                         or main.bg,
                     line_number = {
-                        bg = config.treesitter_context_bg and palette.dark_05
+                        bg = config.treesitter_context_bg and palette.dark_06
                             or main.bg,
                     },
                     bottom = {
                         underline = not config.treesitter_context_bg,
-                        sp = palette.dark_05,
+                        sp = palette.dark_06,
                     },
                 },
             },
@@ -464,7 +464,7 @@ local themes = {
             },
             mini = {
                 indentscope = {
-                    fg = palette.dark_05,
+                    fg = palette.dark_06,
                 },
             },
             lazy = {
@@ -523,7 +523,7 @@ local themes = {
                         bg = palette.light_01,
                     },
                     column = {
-                        bg = palette.dark_05,
+                        bg = palette.dark_06,
                     },
                     line = {
                         bg = config.cursorline and palette.light_02 or main.bg,
