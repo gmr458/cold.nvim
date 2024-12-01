@@ -1,1 +1,2 @@
-![screenshot](./screenshot.png)
+<img src="https://raw.githubusercontent.com/gmr458/cold.nvim/refs/heads/master/screenshot_dark.png" />
+<img src="https://raw.githubusercontent.com/gmr458/cold.nvim/refs/heads/master/screenshot_light.png" />
