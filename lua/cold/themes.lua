@@ -502,7 +502,7 @@ local themes = {
         end
 
         if config.transparent_background then
-            main.bg = 'NONE'
+            main.bg = palette.none
         end
 
         --- @class ColdThemeLight
