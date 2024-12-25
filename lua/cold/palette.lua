@@ -19,7 +19,7 @@ local palette = {
     light_01 = '#c8c8c8',
     light_02 = '#d8d8d8',
     light_03 = '#f9f9f9',
-    light_04 = '#ffffff',
+    light_04 = '#fffff1',
 
     red_01 = '#4C1919',
     red_02 = '#701414',
