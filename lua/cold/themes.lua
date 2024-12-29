@@ -184,6 +184,33 @@ local themes = {
                         fg = palette.grey_02,
                     },
                 },
+                completion = {
+                    menu = {
+                        bg = config.float_borderless and palette.dark_03
+                            or main.bg,
+                    },
+                    border = {
+                        bg = config.float_borderless and palette.dark_03
+                            or main.bg,
+                        fg = config.float_borderless and palette.dark_03
+                            or palette.grey_02,
+                    },
+                    doc = {
+                        bg = config.float_borderless and palette.dark_04
+                            or main.bg,
+                        separator = {
+                            bg = config.float_borderless and palette.dark_04
+                                or main.bg,
+                            fg = palette.grey_02,
+                        },
+                        border = {
+                            bg = config.float_borderless and palette.dark_04
+                                or main.bg,
+                            fg = config.float_borderless and palette.dark_04
+                                or palette.grey_02,
+                        },
+                    },
+                },
             },
             syntax = {
                 comment = {
@@ -668,6 +695,33 @@ local themes = {
                     separator = {
                         bg = main.bg,
                         fg = palette.grey_02,
+                    },
+                },
+                completion = {
+                    menu = {
+                        bg = config.float_borderless and palette.light_02
+                            or main.bg,
+                    },
+                    border = {
+                        bg = config.float_borderless and palette.light_02
+                            or main.bg,
+                        fg = config.float_borderless and palette.light_02
+                            or palette.grey_02,
+                    },
+                    doc = {
+                        bg = config.float_borderless and palette.light_01
+                            or main.bg,
+                        separator = {
+                            bg = config.float_borderless and palette.light_01
+                                or main.bg,
+                            fg = palette.grey_02,
+                        },
+                        border = {
+                            bg = config.float_borderless and palette.light_01
+                                or main.bg,
+                            fg = config.float_borderless and palette.light_01
+                                or palette.grey_02,
+                        },
                     },
                 },
             },

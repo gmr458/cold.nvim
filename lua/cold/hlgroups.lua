@@ -566,6 +566,22 @@ function M.get(theme)
             bg = theme.lazy.progress.bg,
             fg = theme.lazy.progress.todo.fg,
         },
+
+        -- github.com/Saghen/blink.cmp
+        ['BlinkCmpMenu'] = { bg = theme.editor.completion.menu.bg },
+        ['BlinkCmpMenuBorder'] = {
+            bg = theme.editor.completion.border.bg,
+            fg = theme.editor.completion.border.fg,
+        },
+        ['BlinkCmpDoc'] = { bg = theme.editor.completion.doc.bg },
+        ['BlinkCmpDocSeparator'] = {
+            bg = theme.editor.completion.doc.separator.bg,
+            fg = theme.editor.completion.doc.separator.fg,
+        },
+        ['BlinkCmpDocBorder'] = {
+            bg = theme.editor.completion.doc.border.bg,
+            fg = theme.editor.completion.doc.border.fg,
+        },
     }
 end
 
