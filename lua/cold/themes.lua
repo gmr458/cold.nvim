@@ -895,7 +895,7 @@ local themes = {
                     },
                 },
                 root_folder = {
-                    fg = palette.light_02,
+                    fg = palette.grey_01,
                 },
                 git = {
                     deleted = {
