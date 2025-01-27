@@ -582,6 +582,21 @@ function M.get(theme)
             bg = theme.editor.completion.doc.border.bg,
             fg = theme.editor.completion.doc.border.fg,
         },
+
+        -- github.com/folke/snacks.nvim
+        ['SnacksPickerInput'] = { bg = theme.snacks.picker.input.bg },
+        ['SnacksPickerInputBorder'] = {
+            bg = theme.snacks.picker.input.border.bg,
+        },
+        ['SnacksPickerPrompt'] = { bg = theme.snacks.picker.input.bg },
+        ['SnacksPickerList'] = { bg = theme.snacks.picker.list.bg },
+        ['SnacksPickerListBorder'] = { bg = theme.snacks.picker.list.border.bg },
+        ['SnacksPickerDir'] = { link = 'Comment' },
+        ['SnacksPickerRow'] = { link = 'Comment' },
+        ['SnacksPickerCol'] = { link = 'Comment' },
+        ['SnacksPickerGitStatusAdded'] = { fg = theme.git.added.fg },
+        ['SnacksPickerGitStatusDeleted'] = { fg = theme.git.removed.fg },
+        ['SnacksPickerGitStatusModified'] = { fg = theme.git.changed.fg },
     }
 end
 

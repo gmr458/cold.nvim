@@ -508,6 +508,22 @@ local themes = {
                     },
                 },
             },
+            snacks = {
+                picker = {
+                    input = {
+                        bg = palette.dark_02,
+                        border = {
+                            bg = palette.dark_02,
+                        },
+                    },
+                    list = {
+                        bg = palette.dark_03,
+                        border = {
+                            bg = palette.dark_03,
+                        },
+                    },
+                },
+            },
         }
 
         return theme
@@ -1019,6 +1035,22 @@ local themes = {
                     todo = {
                         fg = config.float_borderless and palette.light_02
                             or main.bg,
+                    },
+                },
+            },
+            snacks = {
+                picker = {
+                    input = {
+                        bg = palette.light_01,
+                        border = {
+                            bg = palette.light_01,
+                        },
+                    },
+                    list = {
+                        bg = palette.light_02,
+                        border = {
+                            bg = palette.light_02,
+                        },
                     },
                 },
             },
