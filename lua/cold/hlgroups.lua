@@ -623,6 +623,10 @@ function M.get(theme)
         ['SnacksPickerGitStatusAdded'] = { fg = theme.git.added.fg },
         ['SnacksPickerGitStatusDeleted'] = { fg = theme.git.removed.fg },
         ['SnacksPickerGitStatusModified'] = { fg = theme.git.changed.fg },
+        ['SnacksPickerTree'] = {
+            bg = theme.snacks.picker.list.bg,
+            fg = theme.mini.indentscope.fg,
+        },
     }
 end
 
