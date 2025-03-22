@@ -75,6 +75,7 @@ function M.get(theme)
         ['Question'] = { link = 'WarningMsg' },
         ['QuickFixLine'] = { link = 'Normal' },
         ['Search'] = { bg = theme.editor.search.bg },
+        ['SnippetTabStop'] = { bg = 'NONE' },
         -- ['SpecialKey'] = {},
         ['SpellBad'] = { fg = theme.editor.spell.bad.fg, undercurl = true },
         ['SpellCap'] = { fg = theme.editor.spell.cap.fg, undercurl = true },
