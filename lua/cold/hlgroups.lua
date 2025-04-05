@@ -628,6 +628,22 @@ function M.get(theme)
             bg = theme.snacks.picker.list.bg,
             fg = theme.mini.indentscope.fg,
         },
+
+        ['DapUIBreakpointsPath'] = { fg = theme.dapui.breakpoints.path.fg },
+        ['DapUILineNumber'] = { fg = theme.dapui.breakpoints.line.fg },
+        ['DapUIWatchesEmpty'] = { link = 'Comment' },
+        ['DapUIWatchesError'] = { fg = theme.dapui.watches.error.fg },
+        ['DapUIWatchesValue'] = { fg = theme.dapui.watches.value.fg },
+        ['DapUIScope'] = { fg = theme.dapui.scopes.scope.fg },
+        ['DapUIType'] = { fg = theme.dapui.scopes.type.fg },
+        ['DapUISource'] = { fg = theme.dapui.scopes.type.fg },
+        ['DapUIDecoration'] = { fg = theme.dapui.breakpoints.line.fg },
+        ['DapUIStoppedThread'] = { fg = theme.dapui.stacks.thread.fg },
+        ['DapUIThread'] = { fg = theme.dapui.scopes.type.fg },
+        ['DapUIBreakpointsCurrentLine'] = {
+            fg = theme.dapui.breakpoints.current_line.fg,
+        },
+        ['DapUIModifiedValue'] = { fg = theme.dapui.scopes.mod_value.fg },
     }
 end
 

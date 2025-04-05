@@ -524,6 +524,37 @@ local themes = {
                     },
                 },
             },
+            dapui = {
+                breakpoints = {
+                    path = {
+                        fg = palette.blue_06,
+                    },
+                    current_line = {
+                        fg = palette.blue_05,
+                    },
+                    line = {
+                        fg = palette.dark_04,
+                    },
+                },
+                watches = {
+                    value = { fg = palette.green_06 },
+                    error = { fg = palette.red_05 },
+                },
+                scopes = {
+                    scope = { fg = palette.blue_06 },
+                    type = {
+                        fg = palette.green_06,
+                    },
+                    mod_value = {
+                        fg = palette.blue_05,
+                    },
+                },
+                stacks = {
+                    thread = {
+                        fg = palette.blue_06,
+                    },
+                },
+            },
         }
 
         return theme
@@ -1051,6 +1082,37 @@ local themes = {
                         border = {
                             bg = palette.light_02,
                         },
+                    },
+                },
+            },
+            dapui = {
+                breakpoints = {
+                    path = {
+                        fg = palette.blue_01,
+                    },
+                    current_line = {
+                        fg = palette.blue_02,
+                    },
+                    line = {
+                        fg = palette.dark_03,
+                    },
+                },
+                watches = {
+                    value = { fg = palette.green_01 },
+                    error = { fg = palette.red_02 },
+                },
+                scopes = {
+                    scope = { fg = palette.blue_01 },
+                    type = {
+                        fg = palette.green_02,
+                    },
+                    mod_value = {
+                        fg = palette.blue_02,
+                    },
+                },
+                stacks = {
+                    thread = {
+                        fg = palette.blue_01,
                     },
                 },
             },
